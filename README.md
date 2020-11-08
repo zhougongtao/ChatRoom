@@ -1,4 +1,8 @@
-# chatroom
+# ChatRoom
+Html5 项目 第二组
+
+## 项目说明
+本组计划实现一个多人聊天的聊天室，在不断的迭代中增加功能
 
 ## Project setup
 ```
@@ -20,5 +24,4 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
