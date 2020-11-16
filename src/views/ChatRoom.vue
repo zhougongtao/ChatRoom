@@ -1,13 +1,10 @@
 <template>
   <div class="chatting">
-    <!--    顶部导航条     -->
+
     <chat-head></chat-head>
-
-    <!--    消息显示区域  -->
     <chat-body></chat-body>
-
-    <!--    底部输入区域  -->
     <chat-submit></chat-submit>
+
   </div>
 </template>
 
