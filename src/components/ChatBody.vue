@@ -1,6 +1,6 @@
 <template>
   <div class="chatbody">
-
+    <p>dsadsadsad</p>
 <!--    <template v-for="msgObj in CHAT.msgArr">-->
 <!--      <template v-if="msgObj.login">-->
 <!--        <system-msg :msg="msgObj.user.username"></system-msg>-->
