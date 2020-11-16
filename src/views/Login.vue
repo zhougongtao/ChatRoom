@@ -21,8 +21,8 @@ export default {
       if (this.name === '') {
         return;
       }
-      this.$store.commit('changeName', this.name); //公共数据
-      localStorage.name = this.name;     //本地存储
+      this.$store.state.name = this.name
+      //localStorage.name = this.name;     //本地存储
       this.$router.push({path:'/chatroom'});
     }
   }

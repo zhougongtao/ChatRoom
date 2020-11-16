@@ -95,8 +95,8 @@ const CHAT={
 
         //告诉服务器端有用户登录
         this.socket.emit('login', {userid:this.userid, username:this.username,color:this.color,weichat:this.weichat});
-        //心跳包，30s左右无数据浏览器会断开连接Heartbeat
 
+        //心跳包，30s左右无数据浏览器会断开连接Heartbeat
         setInterval(() => {
             this.socket.emit('heartbeat', 1);
         },10000)

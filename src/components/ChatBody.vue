@@ -1,6 +1,16 @@
 <template>
   <div class="chatbody">
-    <p>dsadsadsad</p>
+    <login-message :name="temp"></login-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <other-message :name="temp" :msg="temp" :color="temp2"></other-message>
+    <my-message :msg="temp" :color="temp2"></my-message>
+
 <!--    <template v-for="msgObj in CHAT.msgArr">-->
 <!--      <template v-if="msgObj.login">-->
 <!--        <system-msg :msg="msgObj.user.username"></system-msg>-->
@@ -11,18 +21,27 @@
 <!--      </template>-->
 <!--    </template>-->
 
-
   </div>
 </template>
 
 
 <script>
 import CHAT from '../API/client'
+import LoginMessage from "@/components/Messages/LoginMessage";
+import OtherMessage from "@/components/Messages/OtherMessage";
+import MyMessage from "@/components/Messages/MyMessage";
 export default {
   name: "ChatBody",
+  components: {
+    LoginMessage,
+    OtherMessage,
+    MyMessage
+  },
   data () {
     return {
-      CHAT
+      CHAT,
+      temp:"zhougt",
+      temp2:"#f1f1f1"
     }
   },
   ready(){
@@ -30,9 +49,6 @@ export default {
       this.$router.go('/login')
     }
     this.visit()
-  },
-  components:{
-
   },
   methods:{
     visit(){

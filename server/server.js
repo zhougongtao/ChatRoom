@@ -72,13 +72,7 @@ io.on('connection', function(socket){
 
 })
 
-http.listen(3000, function(){
-    console.log('listening on *:3000');
+http.listen(3000, ()=>{
+    console.log('listening on 3000');
 });
-// https.createServer(options).listen(3000, function () {
-//     console.log('Https server listening on port ' + 3000);
-// });
-// https.createServer(options,function(req,res){
-// 	res.writeHead(200);
-// 	res.end('hello world\n');
-// }).listen(3000,'127.0.0.1');
+
