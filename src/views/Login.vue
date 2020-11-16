@@ -1,7 +1,9 @@
 <template>
   <div class="login">
     <img src="../assets/message.png" height="100px" width="100px">
+    <br/>
     <h2>请输入您的名字</h2>
+    <br/>
     <input @keyup.enter="getName" v-model.trim="name" type="text"/>
   </div>
 </template>
@@ -16,13 +18,12 @@ export default {
   },
   methods: {
     getName() {
-      alert("登陆成功")
       if (this.name === '') {
         return;
       }
-      this.$store.commit('changeName', this.name);
-      localStorage.name = this.name;
-      this.$router.push('Chatting');
+      this.$store.commit('changeName', this.name); //公共数据
+      localStorage.name = this.name;     //本地存储
+      this.$router.push({path:'/chatroom'});
     }
   }
 }
@@ -36,7 +37,7 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 65%;
 }
 
 h2 {
