@@ -1,7 +1,7 @@
 <template>
   <div class="mymessage">
     <span class="userimg" :style="{'background-color':color}">我</span>
-    <div class="usermsg">{{msg}}</div>
+    <div class="usermsg">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
   </div>
 </template>
 
@@ -40,7 +40,7 @@ export default {
 .usermsg {
   background-color: #fff;
   padding: 10px;
-
+  word-break: break-word;
   float: right;
   position: relative;
   left: -60px;

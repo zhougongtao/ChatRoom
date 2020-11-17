@@ -2,7 +2,7 @@
   <div class="othermessage">
     <span class="userimg" :style="{'background-color':color}">{{ name }}</span>
     <span class="username">{{name}}</span>
-    <div class="usermsg">{{msg}}</div>
+    <div class="usermsg">{{msg}}{{msg}}</div>
   </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
   position: absolute;
   font-size: 14px;
   padding: 2px;
-  margin: 0 10px;
+  margin: -5px 0px;
   color: #999;
 }
 
@@ -52,8 +52,9 @@ export default {
   background-color: #fff;
   padding: 10px;
   position: relative;
+  word-break: break-word;
   left: 60px;
-  top: -20px;
+  top: -35px;
   border-radius: 6px;
   max-width: calc(100% - 180px);
   font-size: 16px;

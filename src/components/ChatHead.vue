@@ -12,7 +12,10 @@
       <ul class="a">
           <li  v-for="(item,key) in list" :key="key">
             <br><br><br>
-            <van-button round type="info" style="width:80%;background: rgba(0,0,0,0.1);border-color:rgba(0,0,0,0.1);color:black">
+            <van-button round type="info" style="width:80%;
+            background: rgba(0,0,0,0.1);
+            border-color:rgba(0,0,0,0.1);
+            color:black">
               {{item}}</van-button>
             <br><br><br>
            </li>
@@ -32,7 +35,7 @@ export default {
   data(){
     return{
       show:false,
-      list:['功能1','功能2','功能3'],                   //功能列表
+      list:['戳一戳','表情','设为特别关心'],                   //功能列表
     }
   },
   methods: {
