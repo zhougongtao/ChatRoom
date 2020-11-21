@@ -1,0 +1,125 @@
+/*公共样式*/
+*{padding:0; margin:0;}
+html,body{width:100%;height: 100%;}
+#app{height: 100%;background-color: #fff;}
+.hello{height: 100%;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*zoom:1}
+.cred{color:#f03e3e;}
+.cgreen{color:#459d36;}
+.hide{display:none;}
+.fr{float:right;}
+.fl{float: left;}
+.rela{position: relative;}
+.abs{position:absolute;}
+h1{position: fixed; z-index:20; width: 100%; height:50px; line-height:50px; font-size:20px; left: 0; top: 0; background: #000; color: #fff;}
+
+/*登录界面*/
+.login {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65%;
+}
+
+.login-h2 {
+letter-spacing: 1px;
+}
+
+.login-input {
+width: 300px;
+padding: 5px 10px;
+margin-top: 10px;
+color: black;
+text-align: center;
+font-size: 2rem;
+letter-spacing: 2px;
+}
+/*聊天室*/
+.chatting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/*聊天室主界面*/    
+.chatbody{
+    background-color: #f6f6f6;
+    height: calc(100% - 86px);
+    width: 100% ;
+    overflow-y: scroll;
+}
+
+/*当前在线人数显示*/
+.onlineshow{
+    background-color:white;
+    height: calc(100% - 86px);
+    width: 100% ;
+    height:80%;
+    overflow-y: scroll;
+}
+
+
+/*发消息文本框*/
+.chatsubmit{
+    background-color: #f1f1f1;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    border-top: solid 1px rgba(0,0,0,0.1);
+  
+  }
+.message{
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+.submit{
+    display: flex;
+    background-color: rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 18%;
+    border-radius: 10px;
+    outline: none;
+  }
+
+
+.item-right .message::after {
+	content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: -14px;
+    top: 7px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(98, 185, 0);
+    border-image: initial;
+}
+.item-left .message::before {
+	content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: -13px;
+    top: 6px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
+    border-image: initial;
+}
+
+
