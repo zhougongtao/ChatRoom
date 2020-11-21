@@ -8,24 +8,24 @@ Html5 项目 第二组
 ## 项目说明
 本组计划实现一个多人聊天的聊天室，在不断的迭代中增加功能
 
-## Project setup
+### 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行后端服务
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 项目打包
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### vue项目启动
 ```
-npm run lint
+npm run dev
 ```
 
 
